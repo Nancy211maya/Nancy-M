@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/estilos1.css">
+	<title>Café Gabo's</title>
+</head>
+<body>
+
+
+	<div>
+		<div class=" contenedor-principal">
+			<header>
+				<a href=" #1"class="logos">Café </a> 
+				<nav class="menu">
+
+					<a href="index.html">Inicio</a>
+					<a href="autografia.html"  target="_self" class= "link">Nosotros</a>
+					<a href="galeria.html"  target="_self" class="link" >Especialidades</a>
+						
+					
+				</nav>
+			</header>
+			<main>
+				<div class="contenedor-imagen">
+					<img src="img/cafe.jpg"alt="Café">
+					
+				</div>
+						<div class="contenedor-texto">
+						  <h2 class="titulo">Café<br>
+						    Capuccino <span id="dynamic-text"></span>
+						  </h2>
+						  <!-- Titulos -->
+						  
+						  
+						  <p>
+						    "Gabo's Café busca impulsar el consumo local en Toluca y Metepec, mientras nos consolidamos como un referente para los amantes del café con una variedad de estilos y métodos de preparación."
+						  </p>
+						  <br>
+						  <a href="menu.html" target="_self" class="btn_link activo">Descarga menú</a>
+						  <a href="https://wa.me/527295295714?text=Hola,bienvenido a cafe Gabo's" target="_self" class="btn_link activo">Contactar por WhatsApp</a>
+						</div>
+			</main>
+		</div>
+				<script>
+				 
+				  const words = ["Americano", "Expreso", "Olla", "Moka"];
+				  
+				 
+				  const dynamicTextElement = document.getElementById('dynamic-text');
+				  
+				  
+				  let wordIndex = 0;
+
+				  
+				  function changeWord() {
+				    dynamicTextElement.textContent = words[wordIndex];
+				    wordIndex = (wordIndex + 1) % words.length; // Cambiar al siguiente índice y reiniciar si llega al final
+				  }
+
+				  
+				  setInterval(changeWord, 2000); 
+				</script>
+
+			<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+     <script src="js/typed.js"></script>
+     <script src="js/mainn.js"></script>
+
+	</div>
+	<!--<div class="pagina">
+      <div class="logo">
+   Nombre: NANCY ANAHI MAYA GOMEZ
+		<img src="img/1.jpg" alt="Café">
+	 </div>-->
+	</div>
+</body>
